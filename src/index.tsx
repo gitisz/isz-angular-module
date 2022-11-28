@@ -33,7 +33,7 @@ export function setup(app: PiletApi) {
           mr: open ? 3 : 'auto',
           justifyContent: 'center',
           height: '1em',
-          width: '1.5em'
+          width: '1em'
         }}
       >
         <FaAngular size="22" />
