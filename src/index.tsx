@@ -18,25 +18,13 @@ export function setup(app: PiletApi) {
   app.registerPage("/angular-app", AngularPage);
 
   app.registerMenu(() =>
-    <ListItemButton
-      component={Link}
-      to="/angular-app"
-      sx={{
-        minHeight: 48,
-        justifyContent: open ? 'initial' : 'center',
-        px: 2.5,
-      }}
-    >
-      <ListItemIcon
-        sx={{
-          minWidth: 0,
-          mr: open ? 3 : 'auto',
-          justifyContent: 'center',
-          height: '1em',
-          width: '1em'
-        }}
-      >
-        <FaAngular size="22" />
+    <ListItemButton component={Link}
+
+      to="/angular-app">
+      <ListItemIcon>
+        <div style={{ paddingLeft: 5}}>
+          <FaAngular size="24" />
+        </div>
       </ListItemIcon>
       <ListItemText primary="Angular App" sx={{ opacity: open ? 1 : 0 }} />
     </ListItemButton>
